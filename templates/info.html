@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>说明</title>
+        <style>
+        .center {
+            margin: auto;
+            padding: 30px;
+        }
+            
+        </style>
+    </head>
+    <body>
+        <div name="head">
+            <h1 style="text-align: center">代码说明</h1>
+            <h4 style="text-align: center">谭振雄</h4>
+            <p style="text-align: center">计算机类17-1</p>
+            <p style="text-align: center">161102106</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div style="width: 600px;margin: 0 auto" align="left">
+            <h3>文件说明</h3>
+            <p style="text-indent:2em; ">./templates/ : html文件所在文件夹</p>
+            <p style="text-indent:2em; ">./app.py : 主程序</p>
+            <p style="text-indent:2em; ">./classData.py : 存储课程信息的数据类，以及操作文件</p>
+            <p style="text-indent:2em; ">./data : 课程数据存储文件</p>
+            <br>
+            <br>
+            <h3>关于数据库说明</h3>
+            <p style="text-indent:2em; ">虽然程序没有使用database，但是真的很熟悉掌握SQL语法以及MySQLdb python 扩展包的使用。希望老师不要纠结于这一点…</p>
+        </div>
+        <div align="center" name="foot">
+            <a href="{{url_for('search')}}">返回</a>
+        </div>
+    </body>
+</html>

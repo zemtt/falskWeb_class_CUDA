@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>课程添加</title>
+        <style>
+        .center {
+            margin: auto;
+            padding: 30px;
+        }
+            
+        </style>
+    </head>
+    <body>
+        <div name="head">
+            <h1 style="text-align: center">大学课程</h1>
+            <h3 style="text-align: center">课程添加</h3>
+        </div>
+        <div align="center" name="search_body" border="1">
+            <form action="{{url_for('add')}}" method="post">
+
+                <div>
+                    <table border="1">
+                        <tr>
+                            <td>大学</td>
+                            <td><input type="text" name="school"></td>
+                        </tr>
+                        <tr>
+                            <td>课程</td>
+                            <td><input type="text" name="class"></td>
+                        </tr>
+                        <tr>
+                            <td>时间</td>
+                            <td><input type="text" name="date" placeholder="yy/mm/dd"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div align="center" style="margin: 10 10 10 10">
+                    <input type="submit" value="添加">
+                </div>
+                
+            </form>
+        </div>
+        <div align="center" name="foot">
+            <a href="{{url_for('search')}}">搜索课程</a>
+            <br>
+            <br>
+            <a href="{{url_for('info')}}">关于</a>
+        </div>
+    </body>
+</html>
